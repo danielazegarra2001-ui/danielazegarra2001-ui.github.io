@@ -2,35 +2,40 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Daniela Zegarra Zegarra</title>
-
+  <header>
+  <img src="foto.jpg" alt="Foto de Daniela" class="foto-header">
+  <h1>Daniela Zegarra Zegarra</h1>
+</header>
   <style>
-    /* --- Estilos generales --- */
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #fffafc; /* Fondo suave */
-      color: #333;
-    }
-
+    .foto-header {
+  width: 150px;       /* Tamaño */
+  height: 150px;
+  border-radius: 50%; /* La vuelve redonda */
+  object-fit: cover;  /* Evita que se deforme */
+  border: 5px solid #ffffff; /* Borde blanco */
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombrita */
+}
     /* --- Encabezado (rectángulo rosado) --- */
     header {
-      background-color: #ffb6c1; /* Rosa pastel */
-      color: #ffffff;
-      text-align: center;
-      padding: 50px 20px;
-      font-size: 48px;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      border-radius: 0 0 25px 25px;
-    }
+  background-color: #ffb6c1;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px 60px;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
+header h1 {
+  font-size: 42px;
+  margin: 10px 0 0;
+  font-weight: bold;
+}
     /* --- Contenido principal --- */
     main {
       text-align: center;
       padding: 60px 20px;
     }
-
     /* --- Subtítulos --- */
     h2 {
       color: #cc1a70; /* Rosa fuerte */
@@ -198,3 +203,4 @@
   </main>
 </body>
 </html>    
+
