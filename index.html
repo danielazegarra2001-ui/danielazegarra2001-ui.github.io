@@ -68,20 +68,53 @@
       gap: 10px;
     }
 
-    /* --- Íconos decorativos --- */
+    /* --- Íconos decorativos generales --- */
     .icon {
       font-size: 22px;
     }
 
-    /* --- Espacios vacíos --- */
-    .placeholder {
-      height: 100px; /* espacio visible */
+    /* --- Contenedores mejorados para Contactos y Redes --- */
+    .box {
       background-color: #fff5f9;
-      border: 2px dashed #ffb6c1;
+      border: 2px solid #ffb6c1;
       border-radius: 15px;
       margin: 20px auto;
       width: 70%;
-      max-width: 500px;
+      max-width: 550px;
+      padding: 25px 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .box li {
+      margin-bottom: 15px;
+      font-size: 18px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .box .icon {
+      font-size: 22px;
+      color: #cc1a70;
+    }
+
+    .box a {
+      color: #cc1a70;
+      text-decoration: none;
+      word-break: break-all;
+      transition: 0.2s;
+    }
+
+    .box a:hover {
+      text-decoration: underline;
+      opacity: 0.8;
     }
   </style>
 </head>
@@ -92,6 +125,7 @@
 
   <!-- Contenido principal -->
   <main>
+
     <h2>Acerca de mí</h2>
     <p>
       Soy Daniela Zegarra Zegarra y actualmente estoy cursando el tercer semestre
@@ -120,19 +154,47 @@
     </ul>
 
     <h2>Contactos</h2>
-<div class="placeholder">
-  <ul>
-    <li><a href="https://xiomaralimachiflores.github.io/mi-portafolio/" target="_blank">https://xiomaralimachiflores.github.io/mi-portafolio/</a></li>
-    <li><a href="https://luiguicalcina-gif.github.io/Mi-Pagina-Web/" target="_blank">https://luiguicalcina-gif.github.io/Mi-Pagina-Web/</a></li>
-    <li><a href="https://josecalizaya-cmyk.github.io/joseluiscalizayachura.github.io/" target="_blank">https://josecalizaya-cmyk.github.io/joseluiscalizayachura.github.io/</a></li>
-  </ul>
-</div>
+    <div class="box">
+      <ul>
+        <li>
+          <span class="icon">👩‍💻</span>
+          <a href="https://xiomaralimachiflores.github.io/mi-portafolio/" target="_blank">
+            Portafolio de Xiomara Limachi
+          </a>
+        </li>
+        <li>
+          <span class="icon">💼</span>
+          <a href="https://luiguicalcina-gif.github.io/Mi-Pagina-Web/" target="_blank">
+            Página de Luigui Calcina
+          </a>
+        </li>
+        <li>
+          <span class="icon">🧑‍🎓</span>
+          <a href="https://josecalizaya-cmyk.github.io/joseluiscalizayachura.github.io/" target="_blank">
+            Portafolio de José Calizaya
+          </a>
+        </li>
+      </ul>
+    </div>
 
-<h2>Redes</h2>
-<div class="placeholder">
-  <ul>
-    <li><a href="https://www.linkedin.com/in/daniela-zegarra-446861324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Mi LinkedIn</a></li>
-    <li><a href="https://github.com/danielazegarra2001-ui" target="_blank">Mi GitHub</a></li>
-  </ul>
-</div>
+    <h2>Redes</h2>
+    <div class="box">
+      <ul>
+        <li>
+          <span class="icon">🔗</span>
+          <a href="https://www.linkedin.com/in/daniela-zegarra-446861324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            Mi LinkedIn
+          </a>
+        </li>
+        <li>
+          <span class="icon">🐙</span>
+          <a href="https://github.com/danielazegarra2001-ui" target="_blank">
+            Mi GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
 
+  </main>
+</body>
+</html>    
